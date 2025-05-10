@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">VibeNest</string>
+    <string name="tagline">Share Your Vibe</string>
+    <string name="search">Search</string>
+    <string name="notifications">Notifications</string>
+    <string name="profile">Profile</string>
+    
+    <!-- Login Screen -->
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="btn_login">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="no_account">Don\'t have an account? </string>
+    <string name="sign_up">Sign Up</string>
+    <string name="msg_enter_credentials">Please enter email and password</string>
+    <string name="msg_login_success">Login successful</string>
+    
+    <!-- Signup Screen -->
+    <string name="hint_full_name">Full Name</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="btn_signup">Sign Up</string>
+    <string name="have_account">Already have an account? </string>
+    <string name="msg_enter_name">Please enter your name</string>
+    <string name="msg_enter_email">Please enter your email</string>
+    <string name="msg_enter_password">Please enter a password</string>
+    <string name="msg_passwords_not_match">Passwords do not match</string>
+    <string name="msg_registration_success">Registration successful</string>
+    
+    <!-- Video Filters -->
+    <string name="filter_beauty">Beauty</string>
+    <string name="filter_vintage">Vintage</string>
+    <string name="filter_dramatic">Dramatic</string>
+    <string name="filter_intensity">Filter Intensity</string>
+    <string name="video_saved">Video saved: %1$s</string>
+    <string name="video_capture_failed">Video capture failed: %1$s</string>
+    <string name="permissions_not_granted">Camera and audio permissions are required</string>
+    <string name="record_video">Record Video</string>
+    <string name="stop_recording">Stop Recording</string>
+    
+    <!-- Bottom Navigation -->
+    <string name="title_home">Home</string>
+    <string name="title_shorts">Shorts</string>
+    <string name="title_upload">Upload</string>
+    <string name="title_subscriptions">Subscriptions</string>
+    <string name="title_library">Library</string>
+    
+    <!-- Upload -->
+    <string name="video_thumbnail">Video Thumbnail</string>
+    <string name="record_new_video">Record New Video</string>
+    <string name="video_title">Video Title</string>
+    <string name="video_description">Description</string>
+    <string name="upload_video">Upload Video</string>
+    <string name="error_no_video">Please record or select a video first</string>
+    <string name="error_title_required">Title is required</string>
+    <string name="error_description_required">Description is required</string>
+    <string name="msg_upload_started">Upload started...</string>
+    
+    <!-- Home Menu -->
+    <string name="search">Search</string>
+    <string name="notifications">Notifications</string>
+    <string name="account">Account</string>
+    <string name="no_videos_yet">No videos available</string>
+    <string name="more_options">More options</string>
+    
+    <!-- Shorts -->
+    <string name="like_video">Like video</string>
+    <string name="comments">Comments</string>
+    <string name="share">Share</string>
+    
+     <!-- Tools -->
+     <string name="tools">Tools</string>
+    <string name="tune_image">Tune</string>
+    <string name="curves">Curves</string>
+    <string name="hdr_scape">HDR</string>
+    <string name="grunge">Grunge</string>
+    <string name="retrolux">Retrolux</string>
+    <string name="glamour_glow">Glamour</string>
+    <string name="pop">Pop</string>
+
+    <!-- Looks -->
+    <string name="looks">Looks</string>
+    <string name="none">None</string>
+    <string name="accentuate">Accentuate</string>
+    <string name="morning">Morning</string>
+    <string name="faded_glow">Faded Glow</string>
+    <string name="fine_art">Fine Art</string>
+
+    <!-- Tune Controls -->
+    <string name="brightness">Brightness</string>
+    <string name="contrast">Contrast</string>
+    <string name="saturation">Saturation</string>
+    <string name="sharpness">Sharpness</string>
+    <string name="highlights">Highlights</string>
+    <string name="shadows">Shadows</string>
+    <string name="temperature">Temperature</string>
+
+    <!-- Curve Controls -->
+    <string name="rgb">RGB</string>
+    <string name="red">Red</string>
+    <string name="green">Green</string>
+    <string name="blue">Blue</string>
+    <string name="curve_presets">Curve Presets</string>
+    <string name="linear">Linear</string>
+    <string name="medium_contrast">Medium Contrast</string>
+    <string name="high_contrast">High Contrast</string>
+    <string name="cross_process">Cross Process</string>
+    <string name="negative">Negative</string>
+    <string name="reset">Reset</string>
+
+    <!-- Beauty Adjustments -->
+    <string name="beauty_adjustments">Beauty</string>
+    <string name="smoothness">Smoothness</string>
+    <string name="skin_tone">Skin Tone</string>
+    <string name="face_slim">Face Slim</string>
+
+    <!-- Color Adjustments -->
+    <string name="color_adjustments">Color</string>
+
+    <!-- Filter Series -->
+    <string name="filter_series">Filters</string>
+    <string name="filter_none">None</string>
+    <string name="filter_a1">A1</string>
+    <string name="filter_a2">A2</string>
+    <string name="filter_a3">A3</string>
+    <string name="filter_hb1">HB1</string>
+    <string name="filter_hb2">HB2</string>
+    <string name="filter_e1">E1</string>
+    <string name="filter_e3">E3</string>
+    <string name="filter_k1">K1</string>
+    <string name="filter_k2">K2</string>
+    <string name="filter_g1">G1</string>
+    <string name="filter_g2">G2</string>
+    <string name="filter_c1">C1</string>
+    <string name="filter_m5">M5</string>
+
+    <!-- Messages -->
+    <string name="photo_saved">Photo saved!</string>
+    <string name="failed_save_photo">Failed to save photo</string>
+    <string name="failed_camera">Failed to start camera</string>
+    <string name="permissions_not_granted">Permissions not granted</string>
+
+    <!-- Buttons -->
+    <string name="capture_photo">Capture Photo</string>
+</resources>
