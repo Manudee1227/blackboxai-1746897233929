@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="36dp"
+    android:viewportWidth="108"
+    android:viewportHeight="36">
+
+    <!-- Main circular nest shape -->
+    <path
+        android:fillColor="#FF6B6B"
+        android:pathData="M18,8 A10,10 0 1,0 18,28 A10,10 0 1,0 18,8"
+        android:alpha="0.9"/>
+
+    <!-- Inner circular shape -->
+    <path
+        android:fillColor="#4ECDC4"
+        android:pathData="M18,12 A6,6 0 1,0 18,24 A6,6 0 1,0 18,12"
+        android:alpha="0.9"/>
+
+    <!-- Dynamic wave line -->
+    <path
+        android:strokeColor="#2C3E50"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:pathData="M14,18 Q16,16 18,18 T22,18"/>
+
+    <!-- Text "VibeNest" -->
+    <path
+        android:fillColor="#2C3E50"
+        android:pathData="M35,12h3v12h-3zM40,12h4l2,8l2,-8h4l-4,12h-4zM55,12h3v12h-3zM60,12h8v2.5h-5v2.5h4v2.5h-4v2h5v2.5h-8zM70,12h3v12h-3zM75,12h4l2,8l2,-8h4l-4,12h-4zM90,12h8v2.5h-5v2.5h4v2.5h-4v2h5v2.5h-8z"/>
+
+</vector>
