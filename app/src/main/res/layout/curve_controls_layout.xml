@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- Channel Selector -->
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/channelChipGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:singleSelection="true">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/channelRGB"
+            style="@style/Widget.BeautyCam.Chip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rgb"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/channelRed"
+            style="@style/Widget.BeautyCam.Chip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/red"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/channelGreen"
+            style="@style/Widget.BeautyCam.Chip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/green"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/channelBlue"
+            style="@style/Widget.BeautyCam.Chip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blue"/>
+    </com.google.android.material.chip.ChipGroup>
+
+    <!-- Curve View -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="16dp"
+        android:background="#40FFFFFF">
+
+        <com.beautycam.views.CurveView
+            android:id="@+id/curveView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </FrameLayout>
+
+    <!-- Preset Curves -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/curve_presets"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:layout_marginBottom="8dp"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/curvePresetsChipGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:singleSelection="true">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/curveLinear"
+                style="@style/Widget.BeautyCam.Chip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/linear"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/curveMediumContrast"
+                style="@style/Widget.BeautyCam.Chip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/medium_contrast"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/curveHighContrast"
+                style="@style/Widget.BeautyCam.Chip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/high_contrast"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/curveCrossPro"
+                style="@style/Widget.BeautyCam.Chip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cross_process"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/curveNegative"
+                style="@style/Widget.BeautyCam.Chip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/negative"/>
+
+        </com.google.android.material.chip.ChipGroup>
+    </HorizontalScrollView>
+
+    <!-- Reset Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/resetCurveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:text="@string/reset"
+        style="@style/Widget.MaterialComponents.Button.TextButton"/>
+
+</LinearLayout>
