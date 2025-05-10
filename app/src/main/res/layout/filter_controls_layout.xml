@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#80000000">
+
+    <!-- Tools Section -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tools"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/toolsChipGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:singleSelection="true">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/toolTune"
+                style="@style/Widget.BeautyCam.Chip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tune_image"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/toolCurves"
+                style="@style/Widget.BeautyCam.Chip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/curves"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/toolHDR"
+                style="@style/Widget.BeautyCam.Chip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hdr_scape"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/toolGrunge"
+                style="@style/Widget.BeautyCam.Chip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/grunge"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/toolRetrolux"
+                style="@style/Widget.BeautyCam.Chip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/retrolux"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/toolGlamour"
+                style="@style/Widget.BeautyCam.Chip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/glamour_glow"/>
+        </com.google.android.material.chip.ChipGroup>
+    </HorizontalScrollView>
+
+    <!-- Looks Section -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/looks"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/looksChipGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:singleSelection="true">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/lookNone"
+                style="@style/Widget.BeautyCam.Chip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/none"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/lookAccentuate"
+                style="@style/Widget.BeautyCam.Chip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/accentuate"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/lookMorning"
+                style="@style/Widget.BeautyCam.Chip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/morning"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/lookFadedGlow"
+                style="@style/Widget.BeautyCam.Chip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/faded_glow"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/lookFineArt"
+                style="@style/Widget.BeautyCam.Chip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fine_art"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/lookPop"
+                style="@style/Widget.BeautyCam.Chip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pop"/>
+        </com.google.android.material.chip.ChipGroup>
+    </HorizontalScrollView>
+
+    <!-- Adjustments Section -->
+    <include
+        android:id="@+id/tuneControls"
+        layout="@layout/tune_controls_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <include
+        android:id="@+id/curveControls"
+        layout="@layout/curve_controls_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <!-- Capture Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/captureButton"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:insetLeft="0dp"
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:insetBottom="0dp"
+        app:cornerRadius="32dp"
+        app:backgroundTint="@android:color/white"/>
+
+</LinearLayout>
