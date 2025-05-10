@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.beautycam.fragments.HomeFragment"
+        android:label="@string/title_home" />
+
+    <fragment
+        android:id="@+id/navigation_shorts"
+        android:name="com.beautycam.fragments.ShortsFragment"
+        android:label="@string/title_shorts" />
+
+    <fragment
+        android:id="@+id/navigation_upload"
+        android:name="com.beautycam.fragments.UploadFragment"
+        android:label="@string/title_upload" />
+
+    <fragment
+        android:id="@+id/navigation_subscriptions"
+        android:name="com.beautycam.fragments.SubscriptionsFragment"
+        android:label="@string/title_subscriptions" />
+
+    <fragment
+        android:id="@+id/navigation_library"
+        android:name="com.beautycam.fragments.LibraryFragment"
+        android:label="@string/title_library" />
+
+    <fragment
+        android:id="@+id/videoPreviewFragment"
+        android:name="com.beautycam.fragments.VideoPreviewFragment"
+        android:label="VideoPreviewFragment">
+        <action
+            android:id="@+id/action_videoPreviewFragment_to_uploadFragment"
+            app:destination="@id/navigation_upload"
+            app:popUpTo="@id/navigation_upload"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <action
+        android:id="@+id/action_global_videoPreviewFragment"
+        app:destination="@id/videoPreviewFragment" />
+
+</navigation>
