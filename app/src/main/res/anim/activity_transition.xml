@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android"
+    android:transitionOrdering="together">
+    
+    <slide android:duration="400"
+        android:slideEdge="right">
+        <targets>
+            <target android:excludeId="@android:id/statusBarBackground"/>
+            <target android:excludeId="@android:id/navigationBarBackground"/>
+        </targets>
+    </slide>
+    
+    <fade android:duration="400">
+        <targets>
+            <target android:targetId="@android:id/statusBarBackground"/>
+            <target android:targetId="@android:id/navigationBarBackground"/>
+        </targets>
+    </fade>
+    
+    <changeBounds android:duration="400"/>
+    <changeClipBounds android:duration="400"/>
+    <changeTransform android:duration="400"/>
+    <changeImageTransform android:duration="400"/>
+    
+</transitionSet>
