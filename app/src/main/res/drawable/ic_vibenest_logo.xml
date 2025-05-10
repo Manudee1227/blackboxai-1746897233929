@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="90dp"
+    android:height="24dp"
+    android:viewportWidth="90"
+    android:viewportHeight="24">
+    
+    <!-- Music note symbol -->
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M12,3v10.55c-0.59,-0.34 -1.27,-0.55 -2,-0.55 -2.21,0 -4,1.79 -4,4s1.79,4 4,4 4,-1.79 4,-4V7h4V3h-6z"/>
+    
+    <!-- Text "VibeNest" -->
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M24,8h2v12h-2z"/>
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M28,8h6l-3,12h-6z"/>
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M36,8h2v12h-2z"/>
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M40,8h6v2h-4v3h3v2h-3v3h4v2h-6z"/>
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M48,8h2v12h-2z"/>
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M52,8h6l-3,12h-6z"/>
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M60,8h2v12h-2z"/>
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M64,8h6v2h-4v3h3v2h-3v5h-2z"/>
+</vector>
